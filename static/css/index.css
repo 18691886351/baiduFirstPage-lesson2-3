@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text_span {
+    border: 1px solid #b6b6b6;
+    background: #fff;
+    display: inline-block;
+    width: 539px;
+    height: 34px;
+    text-align: left;
+    position: relative;
+    border-right-width: 0px;
+    margin-right: 0px;
+    letter-spacing: -0.5em;
+}
+
+img {
+    width: 270px;
+    height: 129px;
+}
+
+input {
+    border: 0;
+    padding: 0;
+}
+
+input[type="button"] {
+    background: #3385ff;
+    color: #fff;
+    height: 36px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+input[type="text"] {
+    height: 22px;
+    width: 500px;
+    padding: 0;
+    margin: 6px 0 0 7px;
+    outline: 0;
+}
+
+.camera {
+    position: absolute;
+    right: 11px;
+    top: 30%;
+    height: 16px;
+    width: 18px;
+    background: #fff url(../images/soutu_icons_sample_6a1e1619.png) no-repeat -229px 0;
+}
+
+.button_span {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.logo {
+    width: 270px;
+    height: 129px;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.qrcode-img {
+    width: 60px;
+    height: 60px;
+    background: url(../images/zbios_62c636fe.png) 0 0 no-repeat;
+}
+
+.qrcode-img2 {
+    width: 60px;
+    height: 60px;
+    background: url(../images/nuomi_510f7472.png) 0 0 no-repeat;
+}
+
+.qrcode-text {
+    line-height: 23px;
+}
