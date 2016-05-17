@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道了</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+	<style>
+		.text_span{
+			border:1px solid #b6b6b6;
+			background:#fff;
+			display:inline-block;
+			width:539px;
+			height:34px;
+			text-align: left;
+			position: relative;
+			border-right-width:0px;
+			margin-right:0px;
+			letter-spacing: -0.5em;
+		}
+
+		input{
+			border:0;
+			padding:0;
+		}
+
+		input[type="button"]{
+		    background:#3385ff;
+		    color:#fff;
+		    height:36px;
+		    width:100px;
+		    letter-spacing: 1px;
+		    font-size: 15px;
+		}
+
+		input[type="text"]{
+			height:22px;
+			width:500px;
+			padding:0;
+			margin:6px 0 0 7px;
+			outline:0;
+		}
+		.camera{
+			position:absolute;
+			right:11px;
+			top:30%;
+			height:16px;
+			width: 18px;
+			background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/soutu_icons_sample_6a1e1619.png) no-repeat -229px 0;
+		}
+
+		.button_span{
+			position: absolute;
+			display:inline-block;
+			margin:0;
+			padding:0;
+		}
+
+		a{
+			margin-left: 20px;
+			font-weight:bold;
+			font-size:13px;
+		}
+		
+	</style>
+
+
+</head>
+<body>
+    <div style="position:relative;height:24px">
+        <div style="position:absolute;right: 0px">
+            <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+            <a href="http://news.baidu.com/">新闻</a>
+            <a href="http://www.hao123.com/">hao123</a>
+            <a href="http://map.baidu.com/">地图</a>
+            <a href="http://v.baidu.com/">视频</a>
+            <a href="http://tieba.baidu.com/">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+            <a href="">设置</a>
+            <a href="">更多产品</a>
+        </div>
+    </div>
+
+    <div style="text-align:center;">
+    	<img width="270" height="129" src="https://www.baidu.com/img/bd_logo1.png">
+		<div style="margin:22px auto;padding:0x;position: relative;">
+			<span class="text_span" >
+				<input type="text" />
+				<span class="camera"></span>
+			</span>
+			<span class="button_span">
+				<input type="button" value="百度一下" />
+			</span>
+		</div>
+    </div>
+</body>
+</html>
