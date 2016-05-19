@@ -7,6 +7,7 @@ body {
     font: 12px arial;
 }
 
+
 .text_span {
     border: 1px solid #b6b6b6;
     background: #fff;
@@ -30,7 +31,7 @@ input {
     padding: 0;
 }
 
-input[type="button"] {
+input[type="submit"] {
     background: #3385ff;
     color: #fff;
     height: 36px;
@@ -71,6 +72,15 @@ nav a {
     margin-left: 20px;
     font-weight: bold;
     font-size: 13px;
+    color:#666;
+}
+
+nav a:visited{
+	color:#666;
+}
+
+nav a:hover{
+	color:blue;
 }
 
 .main {
@@ -80,8 +90,8 @@ nav a {
 }
 
 .nav {
-    display: flex;
-    flex-direction: row-reverse;
+	margin-top:20px;
+	text-align: right;
 }
 
 .logo {
@@ -93,6 +103,10 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: #999;
+    position: absolute;
+    bottom: 23px;
+    width: 100vw;
 }
 
 .qrcode-img {
@@ -123,7 +137,7 @@ nav a {
     display: flex;
     flex-direction: column;
     margin-left: 62px;
-    color: #999;
+    
 }
 
 .help {
@@ -153,3 +167,19 @@ nav a {
     top:3px;
     margin-right: 6px;
 }
+
+
+.qrcode-text b{
+	color: #666;
+	font-weight: bold;
+}
+
+li{
+	list-style-type:none;
+}
+
+li ul{
+	display: none;
+}
+
+li:hover ul{display:block;}
