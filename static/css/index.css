@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    font: 12px arial;
+}
+
 .text_span {
     border: 1px solid #b6b6b6;
     background: #fff;
@@ -63,7 +67,7 @@ form {
     flex-direction: row;
 }
 
-a {
+nav a {
     margin-left: 20px;
     font-weight: bold;
     font-size: 13px;
@@ -105,4 +109,47 @@ a {
 
 .qrcode-text {
     line-height: 23px;
+}
+
+.about span {
+    margin-left: 62px;
+}
+
+.right a:link {
+    color: #999;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 62px;
+    color: #999;
+}
+
+.help {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icrlogo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(../images/icons_0e814c16.png) no-repeat;
+    overflow: hidden;
+    background-position: -600px -96px;
+}
+
+.c-icon-jgwablo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    background: url(../images/icons_0e814c16.png) no-repeat;
+    overflow: hidden;
+    background-position: -623px -96px;
+    position: relative;
+    top:3px;
+    margin-right: 6px;
 }
