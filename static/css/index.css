@@ -7,7 +7,6 @@ body {
     font: 12px arial;
 }
 
-
 .text_span {
     border: 1px solid #b6b6b6;
     background: #fff;
@@ -19,6 +18,26 @@ body {
     border-right-width: 0px;
     margin-right: 0px;
     letter-spacing: -0.5em;
+}
+
+
+.text_span_focus {
+    border: 1px solid #4791ff;
+    background: #fff;
+    display: inline-block;
+    width: 539px;
+    height: 34px;
+    text-align: left;
+    position: relative;
+    border-right-width: 0px;
+    margin-right: 0px;
+    letter-spacing: -0.5em;
+}
+
+
+
+.text_span:hover{
+    border-color: #999;
 }
 
 img {
@@ -57,6 +76,10 @@ input[type="text"] {
     background: #fff url(../images/soutu_icons_sample_6a1e1619.png) no-repeat -229px 0;
 }
 
+.camera:hover{
+    background-position: -229px -20px;
+}
+
 .button_span {
     margin: 0;
     padding: 0;
@@ -68,30 +91,206 @@ form {
     flex-direction: row;
 }
 
-nav a {
-    margin-left: 20px;
+.nav {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav_a {
+    margin-left: 15px;
     font-weight: bold;
     font-size: 13px;
-    color:#666;
+    color: #666;
+    line-height: 24px;
+    padding: 8px;
 }
 
-nav a:visited{
-	color:#666;
+
+/*
+只选则.nav下的子元素
+*/
+
+.nav >ul >li {
+    float: left;
 }
 
-nav a:hover{
-	color:blue;
+.nav ul li ul {
+    float: none;
+}
+
+.nav ul li ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li ul li a:link {
+    text-decoration: none;
+}
+
+.nav ul li ul li {
+    padding-top: 5px;
+    text-align: center;
+    width: 80px;
+    padding-bottom: 5px;
+}
+
+.setting {
+    display: block;
+    position: relative;
+}
+
+.setting_menu_hide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 15px;
+    position: absolute;
+    display: none;
+}
+
+.setting_menu_show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 15px;
+    position: absolute;
+}
+
+.products_menu_show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    position: absolute;
+    top: 0;
+    width: 100px;
+    background-color: #f9f9f9;
+    border: 1px solid #b6b6b6;
+    height: 100vh;
+}
+
+.products_menu_hide {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    display: none;
+}
+
+#products_a,
+#products_a:visited,
+#products_a:link {
+    background-color: #3385ff;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+#products_menu ul li {
+    border-bottom: #f0f0f0 1px solid;
+    margin-top: 10px;
+}
+
+#products_menu_top {
+    padding-top: 10px;
+}
+
+
+/*
+“更多产品”下拉菜单的图片设置，发现父级元素设置了display:flex,align-items: center;
+但子元素不能居中的情况，这里仍旧使用来了margin:0 auto;的方式居中
+*/
+
+#music_icon {
+    width: 40px;
+    height: 36px;
+    background: url(../images/bdbri_icons_2e35e84b.png) no-repeat;
+    background-position: -72px 0;
+    margin: 0 auto;
+}
+
+#pic_icon {
+    width: 36px;
+    height: 36px;
+    background: url(../images/bdbri_icons_2e35e84b.png) no-repeat;
+    background-position: -112px 0;
+    margin: 0 auto;
+}
+
+#zhidao_icon {
+    width: 36px;
+    height: 36px;
+    background: url(../images/bdbri_icons_2e35e84b.png) no-repeat;
+    background-position: -36px 0;
+    margin: 0 auto;
+}
+
+#wenku_icon {
+    width: 36px;
+    height: 36px;
+    background: url(../images/bdbri_icons_2e35e84b.png) no-repeat;
+    background-position: -148px 0;
+    margin: 0 auto;
+}
+
+#tuiguang_icon {
+    width: 46px;
+    height: 36px;
+    background: url(../images/bdbri_icons_2e35e84b.png) no-repeat;
+    background-position: -220px 0;
+    margin: 0 auto;
+}
+
+.setting_menu_content {
+    border: 1px solid #b6b6b6;
+    box-shadow: 5px 5px 2px #aaaaaa;
+    /*left: -5px;*/
+}
+
+
+/*
+.nav ul li:hover .setting_menu {
+    display: block;
+}
+*/
+
+.setting_menu_content li:hover {
+    background-color: blue;
+}
+
+.setting_menu_content li:hover a {
+    color: white;
+}
+
+.setting_menu_row {
+    height: 10px;
+}
+
+.setting_menu_row img {
+    width: 8px;
+    height: 8px;
+}
+
+.nav a:visited {
+    color: #666;
+}
+
+.nav a:hover {
+    color: blue;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.nav {
-	margin-top:20px;
-	text-align: right;
 }
 
 .logo {
@@ -118,6 +317,7 @@ nav a:hover{
 .qrcode-img2 {
     width: 60px;
     height: 60px;
+    margin-left: 20px;
     background: url(../images/nuomi_510f7472.png) 0 0 no-repeat;
 }
 
@@ -137,7 +337,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin-left: 62px;
-    
 }
 
 .help {
@@ -164,22 +363,11 @@ nav a:hover{
     overflow: hidden;
     background-position: -623px -96px;
     position: relative;
-    top:3px;
+    top: 3px;
     margin-right: 6px;
 }
 
-
-.qrcode-text b{
-	color: #666;
-	font-weight: bold;
+.qrcode-text b {
+    color: #666;
+    font-weight: bold;
 }
-
-li{
-	list-style-type:none;
-}
-
-li ul{
-	display: none;
-}
-
-li:hover ul{display:block;}
