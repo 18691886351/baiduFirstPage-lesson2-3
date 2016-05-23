@@ -7,6 +7,10 @@ html {
     height: 100%;
 }
 
+/*
+发现紧挨在body的div的margin,会顶出body，所以使用了怪异盒模型解决这个问题。
+在chrome和firefox浏览器都发现这个问题。
+*/
 body {
     font: 12px arial;
     min-height: 580px;
