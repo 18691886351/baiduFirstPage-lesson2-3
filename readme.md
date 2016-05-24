@@ -8,3 +8,7 @@
 #2016-5-23#
 1.发现紧挨在body顶端的div的margin,会顶出body，所以使用了怪异盒模型解决这个问题。
 在chrome和firefox浏览器都发现这个问题。
+2.也可以将紧挨顶端的div的margin属性，换成padding来解决。
+
+#2016-5-24#
+1.将<div class="nav"> 更换成html5标签nav
